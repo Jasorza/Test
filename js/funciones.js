@@ -1,7 +1,7 @@
 'use strict'
 let ProForm = {
     entry: document.querySelectorAll('input.validar'),
-    worth: null,
+    valor: null,
     ExpRegular: null,
     Validation: new Array()
 }
@@ -30,9 +30,31 @@ let ValForm = {
 
 let metForm = {
     startForm: function () {
-        for (var i = 0; i < propForm.entry.length; i++) {
-            propForm.entry[i].addEventListener('change', metForm.chagueInput);
+        for (var i = 0; i < ProForm.entry.length; i++) {
+            ProForm.entry[i].addEventListener('focus', metForm.inpFocus);
+            ProForm.entry[i].addEventListener('blur', metForm.inpOutFocus);
+            ProForm.entry[i].addEventListener('change', metForm.chageInput);
         }
     },
 
+    inpFocus:function(input){
+        ProForm.valor = input.target.value;
+        if (ProForm.valor == ''){
+            document.querySelector("#" + input.target.id).style.background = "rgba(255,0,0,.05)";
+            document.querySelector("#" + input.target.id).style.borderBottom = "6px solid rgba(255, 0, 0, 0.8) ";
+            document.querySelector("[for=" + input.target.id + "] .error").style.display = 'block';
+            
+        }
+    },
+
+    inpOutFocus: function(input){
+        document.querySelector("#" + input.target.id).style.background = "white";
+        document.querySelector("#" + input.target.id).style.borderBottom = "3px solid darkgreen";
+        document.querySelector("[for=" + input.target.id + "] .error").style.display = 'none';
+    },
+
+    chageInput: function(){
+
+    }
 }
+metForm.startForm();

@@ -1,0 +1,35 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+#register{
+    width: 50%;
+    
+}
+h1{
+    color: white;
+    background-color: darkgreen;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.icon{
+    color: darkgreen;
+    display: block;
+}
+#register label span.error{
+    display: none;
+    color: #777;
+}
+#password, #name, #mail, #color{
+    font-size: 15px;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid darkgreen;
+    border-top: 0 #fff solid;
+    border-left: 0 #fff solid;
+    border-right: 0 #fff solid;
+}
+input[type=radio][type=checkbox] {
+    margin-bottom: 20px;
+    font-size: 15px;
+}

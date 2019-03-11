@@ -16,10 +16,7 @@ h1{
     display: block;
     margin-bottom: 10px;
 }
-#register label span.error{
-    display: none;
-    color: #777;
-}
+
 #password, #name, #mail, #color{
     font-size: 15px;
     width: 100%;
@@ -41,4 +38,9 @@ button{
     margin-left: 10px;
     font-size: 32px;
     width: 300px;
+}
+#register label span.error{
+    display: none;
+    color: red;
+    font-size: 13px;
 }

@@ -11,7 +11,7 @@
 
 <body>
     <div class="contenedor-form">
-        <form action="#" method="post" onsubmit="return validar()">
+        <form action="#" method="post" name="formulario" onsubmit="return validar(); return validacion()">
             <p class="nombre">
                 <label for="Nombre">Ingrese su Nombre Completo:</label>
                 <input type="text" class="input" placeholder="Nombre" id="nombre" name="Nombre" onblur="revisar(this)"
@@ -27,21 +27,21 @@
             </p>
             <p class="fecha">
                 <label for="cumpleaños">Selecione la fecha de su cumpleaños</label><br>
-                <input type="date" name="cumpleaños" id="cumpleaños" onblur="validarFecha(this)">
+                <input type="date" name="cumpleaños" id="cumpleaños" onblur="">
             </p>
             <p class="interes">
                 <label for="">Selecione temas de su interes:</label><br>
-                <input type="checkbox" name="" id=""><br>
-                <input type="checkbox" name="" id=""><br>
-                <input type="checkbox" name="" id=""><br>
-                <input type="checkbox" name="" id=""><br>
-            </p>
-            <p class="condiciones">
-                <label for="">Acepta los terminos y condiciones: </label>
+                <input type="checkbox" name="opcion" id="interes" onblur="">Artes<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="">Música<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="">Tecnología<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="">Juegos<br>
+            </p class="condiciones">
+                <label for="condiciones">Acepta los terminos y condiciones:</label>
                 <input type="checkbox" name="condiciones" id="condiciones">
             </p>
             <div class="enviar">
-                <input type="submit" value="Enviar" id="enviar">
+                <button type="submit" id="enviar">Registrarse</button>
+                <!-- <input type="submit" value="Enviar" > -->
                 <div class="transicion"></div>
             </div>
         </form>

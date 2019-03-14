@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,39 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/base.css">
 </head>
+
 <body>
     <div class="contenedor-form">
         <form action="#" method="post" onsubmit="return validar()">
             <p class="nombre">
+                <label for="Nombre">Ingrese su Nombre Completo:</label>
                 <input type="text" class="input" placeholder="Nombre" id="nombre" name="Nombre" onblur="revisar(this)"
                     autocomplete="off">
             </p>
             <p class="correo">
-                <input type="email" class="input" placeholder="mail" id="mail" name="mail" onblur="revisar(this); revisaMail(this)"
+                    <label for="Nombre">Ingrese su Correo Electronico:</label>
+                <input type="email" class="input" placeholder="Correo Electronico" id="mail" name="mail" onblur="revisar(this); revisaMail(this)"
                     autocomplete="off">
             </p>
-            <p class="telefono">
-                <input type="text" class="input" placeholder="telefono" id="telefono" name="telefono" onblur="revisar(this);  revisaNumero(this); revisaLongintud(this, 10)"
-                    autocomplete="off">
+            <p class="password">
+                    <label for="Nombre">Ingrese un Contraseña:</label>
+                <input type="password" class="input" placeholder="Contraseña" id="password" name="password"
+                    onblur="revisar(this);  revisaNumero(this); revisaLongintud(this, 10)" autocomplete="off">
             </p>
-            <p class="mensaje">
-                <textarea type="text" class="input" placeholder="mensaje" id="mensaje" name="mensaje" onblur="revisar(this); revisaLongintud(this, 10)"
-                    autocomplete="off"></textarea>
+            <p class="fecha">
+                <label for="cumpleaños">Selecione la fecha de su cumpleaños</label><br>
+                <input type="date" name="cumpleaños" id="cumpleaños">
+            </p>
+            <p class="interes">
+                <label for="">Selecione temas de su interes:</label><br>
+                <input type="checkbox" name="" id=""><br>
+                <input type="checkbox" name="" id=""><br>
+                <input type="checkbox" name="" id=""><br>
+                <input type="checkbox" name="" id=""><br>
+            </p>
+            <p class="condiciones">
+                <label for="">Acepta los terminos y condiciones: </label>
+                <input type="checkbox" name="condiciones" id="condiciones">
             </p>
             <div class="enviar">
                 <input type="submit" value="Enviar" id="enviar">
@@ -34,4 +50,5 @@
     </div>
     <script src="js/code.js"></script>
 </body>
+
 </html>

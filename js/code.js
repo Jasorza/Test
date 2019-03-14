@@ -18,7 +18,7 @@ function revisaNumero(elemento) {
 };
 
 function revisaLongintud(elemento, min) {
-	if (elemento.value == '') {
+	if (elemento.value !== '') {
 		var data = elemento.value;
 		if (data.length < min) {
 			elemento.className = 'error';
@@ -29,7 +29,7 @@ function revisaLongintud(elemento, min) {
 };
 
 function revisaMail(elemento) {
-	if (elemento.value !== '') {
+	if () {
 		var data = elemento.value;
 		var exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!exp.test(data)) {

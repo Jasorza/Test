@@ -30,9 +30,9 @@ function revisaPass(elemento) {
     }
 };
 
-function validarFecha(elemento) {
-    if (propForm.valor != "") {
-        var fecha = new Date(propForm.valor);
+function  validarFecha(elemento){
+    if (elemento.value != "") {
+        var fecha = new Date(elemento.value);
         console.log(fecha);
         if (fecha) {
             console.log("fecha correcta");
@@ -44,7 +44,7 @@ function validarFecha(elemento) {
             console.log(diaActual);
             console.log("año" + y, "mes" + m, "dia" + d);
             var resultado = m >= 0 && m < 12 && y > 1900 && y < 32768 && d > 0 && d <= diaActual;
-            propForm.validaciones["fechaIng"] = resultado;
+            elemento.value["fechaIng"] = resultado;
             if (resultado) {
                 document.querySelector("[for=" + input.target.id + "] .error").parentNode.removeChild(document.querySelector("[for=" + input.target.id + "] .error"))
             } else {
@@ -82,6 +82,8 @@ function validarFecha(elemento) {
             error = 'El Correo es invalido';
             return false;
         };
+
+
 
         if (!datosCorrectos) {
             alert('Hay errores en el formulario ' + error);

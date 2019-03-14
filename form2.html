@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <div class="contenedor-form">
+        <form action="#" method="post" onsubmit="return validar()">
+            <p class="nombre">
+                <input type="text" class="input" placeholder="Nombre" id="nombre" name="Nombre" onblur="revisar(this)"
+                    autocomplete="off">
+            </p>
+            <p class="correo">
+                <input type="email" class="input" placeholder="mail" id="mail" name="mail" onblur="revisar(this); revisaMail(this)"
+                    autocomplete="off">
+            </p>
+            <p class="telefono">
+                <input type="text" class="input" placeholder="telefono" id="telefono" name="telefono" onblur="revisar(this);  revisaNumero(this); revisaLongintud(this, 10)"
+                    autocomplete="off">
+            </p>
+            <p class="mensaje">
+                <textarea type="text" class="input" placeholder="mensaje" id="mensaje" name="mensaje" onblur="revisar(this); revisaLongintud(this, 10)"
+                    autocomplete="off"></textarea>
+            </p>
+            <div class="enviar">
+                <input type="submit" value="Enviar" id="enviar">
+                <div class="transicion"></div>
+            </div>
+        </form>
+    </div>
+    <script src="js/code.js"></script>
+</body>
+</html>

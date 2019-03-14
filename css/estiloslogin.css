@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#container{
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 450px;
+    border-radius: 25px;
+    padding: 45px 60px 60px 60px;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+label{
+    margin-bottom: 10px;
+
+}
+button{
+    float: left;
+    width: 50%;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: darkgray;
+}

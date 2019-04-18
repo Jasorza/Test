@@ -1,14 +1,14 @@
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif
+body{
+    background-color: grey;
 }
 
-#container{
-    background-color: rgba(0, 0, 0, 0.50);
+#back{
+    background-color: rgba(255, 255, 255, 0.50);
     width: 450px;
     border-radius: 25px;
-    padding: 45px 60px 60px 60px;
+    padding: 50px 50px 50px 50px;
+    margin: 50px auto;
+    box-shadow: 0 0 7px 1px #000000;
 }
 
 input{
@@ -20,21 +20,9 @@ input{
 
 h1{
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
 }
+
 label{
     margin-bottom: 10px;
 
-}
-button{
-    float: left;
-    width: 50%;
-    height: 25px;
-    margin-top: 15px;
-    border-radius: 10px;
-}
-
-button:hover{
-    background-color: darkgray;
 }

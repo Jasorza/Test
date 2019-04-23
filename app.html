@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estiloslogin.css">
     <title>App Money</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Conversor</h1>
-        <label for="monto">Cantidad a converti:</label>
-        <input type="text" name="monto" id="monto" placeholder="ingrese el valor del dinero">
-        <label for="valor"></label>
-        <select name="moneda" id="tipoMoneda">
+        <div id="back">
+            <h1>Conversor</h1>
+            <label for="monto">Cantidad a converti:</label>
+            <input type="text" name="monto" id="monto" placeholder="ingrese el valor del dinero">
+            <label for="valor"></label>
+            <select name="moneda" id="tipoMoneda">
                 <option value="Dolar">Dolares</option>
                 <option value="Euro">Euros</option>
-        </select><br>
-        <label for="valor">Cantida convertida a pesos Col ($)</label>
-        <input type="" name="valor" id="valor" placeholder="Cantidad convertida">
+            </select><br>
+            <label for="valor">Cantida convertida a pesos Col ($)</label>
+            <input type="" name="valor" id="valor" placeholder="Cantidad convertida">
+        </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/funcionalidadco.js"></script>
+
 </body>
+
 </html>

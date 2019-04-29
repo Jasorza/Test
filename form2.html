@@ -19,26 +19,28 @@
                     autocomplete="off">
             </p>
             <p class="correo">
-                    <label for="Nombre">Ingrese su Correo Electronico:</label>
-                <input type="email" class="input" placeholder="Correo Electronico" id="mail" name="mail" onblur="revisar(this); revisaMail(this)" autocomplete="off">
+                <label for="Nombre">Ingrese su Correo Electronico:</label>
+                <input type="email" class="input" placeholder="Correo Electronico" id="mail" name="mail"
+                    onblur="revisar(this); revisaMail(this)" autocomplete="off">
             </p>
             <p class="password">
-                    <label for="Nombre">Ingrese un Contraseña:</label>
-                <input type="password" class="input" placeholder="Contraseña" id="password" name="password" onblur="revisar(this); revisaPass(this)" autocomplete="off">
+                <label for="Nombre">Ingrese un Contraseña:</label>
+                <input type="password" class="input" placeholder="Contraseña" id="password" name="password"
+                    onblur="revisar(this); revisaPass(this)" autocomplete="off">
             </p>
             <p class="fecha">
                 <label for="cumpleaños">Selecione la fecha de su cumpleaños</label><br>
-                <input type="date" name="cumpleaños" id="cumpleaños" onblur="">
+                <input type="date" name="cumpleaños" id="cumpleaños" onblur="validar(this); validarFecha(this)">
             </p>
             <p class="interes">
                 <label for="">Selecione temas de su interes:</label><br>
-                <input type="checkbox" name="opcion" id="interes" onblur="">Artes<br>
-                <input type="checkbox" name="opcion" id="interes" onblur="">Música<br>
-                <input type="checkbox" name="opcion" id="interes" onblur="">Tecnología<br>
-                <input type="checkbox" name="opcion" id="interes" onblur="">Juegos<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="revisarCheck(this)">Artes<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="revisarCheck(this)">Música<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="revisarCheck(this)">Tecnología<br>
+                <input type="checkbox" name="opcion" id="interes" onblur="revisarCheck(this)">Juegos<br>
             </p class="condiciones">
-                <label for="condiciones">Acepta los terminos y condiciones:</label>
-                <input type="checkbox" name="condiciones" id="condiciones" onblur="revisarCheck(this)">
+            <label for="condiciones">Acepta los terminos y condiciones:</label>
+            <input type="checkbox" name="condiciones" id="condiciones" onblur="revisarCheck(this)">
             </p>
             <div class="enviar">
                 <button type="submit" id="enviar">Registrarse</button>
